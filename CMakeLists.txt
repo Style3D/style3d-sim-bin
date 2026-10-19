@@ -29,3 +29,6 @@ message(STATUS "Using prebuilt synreal-solver extension: ${SYNREAL_SOLVER_PREBUI
 
 # Installed modules
 install(FILES "${SYNREAL_SOLVER_PREBUILT_EXTENSION}" DESTINATION style3d_sim)
+
+# Keep the binary license with the installed extension.
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE" DESTINATION style3d_sim/licenses/style3d-sim-bin)
